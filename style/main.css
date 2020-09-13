@@ -1,0 +1,136 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  height: 70px;
+  background-color: var(--black);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .container .logo {
+  margin: 5px 0 0 15px;
+  width: 170px;
+}
+
+header .container nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header .container nav a:hover {
+  color: #fff;
+}
+
+main .filme-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../img/capa.jpg);
+  background-size: cover;
+}
+
+main .filme-principal .container {
+  margin-left: 15px;
+  width: 70%;
+}
+
+main .filme-principal .container .titulo {
+  margin-top: 15%;
+  font-size: 40px;
+}
+
+main .filme-principal .container .descricao {
+  margin: 10px 0 40px 0;
+}
+
+main .filme-principal .botoes {
+  margin-left: 15px;
+}
+
+main .filme-principal .botoes .botao {
+  background-color: rgba(0, 0, 0, 50%);
+  border: none;
+  color: white;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+main .filme-principal .botoes .botao i {
+  margin-right: 8px;
+}
+
+main .filme-principal .botoes .botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.carousel-filmes {
+  margin-top: 10px;
+}
+
+.item img {
+  transition: .5s ease all;
+}
+
+.item img:hover {
+  filter: opacity(50%);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: var(--red);
+}
+
+footer .menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;  
+}
+
+footer .menu-container .menu-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+footer .menu-container .menu-btn i {
+  margin-bottom: 5px;
+}
